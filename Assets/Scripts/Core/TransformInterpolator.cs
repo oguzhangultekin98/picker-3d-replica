@@ -1,0 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+public class TransformInterpolator
+{
+    [Range(0f, 1f)] public float vectorLerpCoefficient;
+    [HideInInspector] public Vector3 oldVector;
+
+    [Range(0f, 1f)] public float quaternionLerpCoefficient;
+    [HideInInspector] public Quaternion oldQuaternion;
+
+}
